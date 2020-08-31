@@ -4,43 +4,126 @@
   box-sizing: border-box;
 }
 
+header#main {
+  background-color: #000;
+  color: #fff;
+}
 header#main #jumbo {
   width: 100%;
   height: 480px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-image: url("imgs/jumbo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-header#main #main-menu {
-  background-color: #000;
-  display: flex;
-  justify-content: flex-end;
+header#main #jumbo section {
+  width: 35%;
+  height: 450px;
 }
-header#main #main-menu a {
-  color: #fff;
+header#main #jumbo section > * {
+  padding: 15px 10px;
+}
+header#main #jumbo section h1 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+header#main #jumbo section h3 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+header#main #jumbo section .download {
   cursor: pointer;
 }
-header#main #main-menu ul {
-  margin-top: 20px;
-  margin-right: 150px;
+header#main #jumbo section p {
+  width: 40%;
+  height: 60px;
+  padding-top: 12px;
+  text-align: center;
+  background-color: #747574;
 }
-header#main #main-menu li {
-  display: inline-block;
+header#main #jumbo section p:hover {
+  background-color: #5b5c5a;
+}
+header#main #jumbo section li {
+  list-style: none;
+  padding: 8px 0;
+  font-size: 20px;
+}
+header#main #jumbo section li i {
+  margin-right: 5px;
+  color: #959ea6;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  cursor: pointer;
+}
+
+nav#contact-menu {
+  width: 100%;
+  height: 50px;
+}
+nav#contact-menu ul {
+  justify-content: flex-end;
   padding-right: 50px;
 }
-header#main #second-menu {
-  background-color: #e6e6e6;
+nav#contact-menu li {
+  padding: 5px 25px;
+}
+nav#contact-menu i {
+  color: #40acfb;
+  margin-right: 5px;
+}
+nav#contact-menu a {
+  color: #959ea6;
+}
+nav#contact-menu a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 nav#main-menu {
   width: 100%;
-  height: 120px;
+  height: 50px;
+}
+nav#main-menu ul {
+  padding: 5px 100px;
+  align-items: center;
+}
+nav#main-menu ul li {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+}
+nav#main-menu ul li:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+nav#main-menu ul i {
+  color: #959ea6;
+}
+nav#main-menu #logo {
+  width: 100px;
 }
 
 nav#second-menu {
   width: 100%;
   height: 80px;
+  background-color: #e6e6e6;
+}
+
+div.content {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
 }
 
 .container {

@@ -1,8 +1,28 @@
+@mixin contentSize {
+  width:100%;
+  height:100vh;
+  border: 1px solid black;
+}
+
+@mixin listStile{
+  ul{display: flex;}
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    cursor: pointer;
+  }
+}
+
+
 $bg_primary:#fff;
 $bg_secondary:#000;
 $bg_third: #e6e6e6;
 
 $cl_primary: #000;
 $cl_secondary: #fff;
-$cl_third: #40acfb;
-$cl_fourth: #cd3f7f;
+$cl_blue: #40acfb;
+$cl_purple: #cd3f7f;
+$cl_grey: #959ea6;
