@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header#main #jumbo {
+  width: 100%;
+  height: 480px;
+  background-image: url("imgs/jumbo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header#main #main-menu {
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+}
+header#main #main-menu a {
+  color: #fff;
+  cursor: pointer;
+}
+header#main #main-menu ul {
+  margin-top: 20px;
+  margin-right: 150px;
+}
+header#main #main-menu li {
+  display: inline-block;
+  padding-right: 50px;
+}
+header#main #second-menu {
+  background-color: #e6e6e6;
+}
+
+nav#main-menu {
+  width: 100%;
+  height: 120px;
+}
+
+nav#second-menu {
+  width: 100%;
+  height: 80px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
